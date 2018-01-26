@@ -1,0 +1,47 @@
+#go-down {
+  animation: updown .5s linear infinite alternate;
+}
+
+@keyframes updown {  
+  0% {  
+    transform: translateY(0px);  
+  }
+  25% {
+    transform: translateY(-6px);
+  }  
+  50% {  
+    transform: translateY(-15px);  
+  }
+  75% {  
+    transform: translateY(-6px);  
+  }    
+  100% {  
+    transform: translateY(0px);  
+  }  
+}  
+
+#loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-image: linear-gradient(80deg, #5abbff 0%, #5573e9  50%, #502cd4 100%)
+}
+
+#loader.hidden {
+  display: none;
+}
+
+.particule {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  margin: -.5rem 0 0 -.5rem;
+  border: 1px solid currentColor;
+  transform: scale(0);
+}
